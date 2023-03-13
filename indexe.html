@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>index</title>
+</head>
+<body>
+  
+<div class="container">
+	<div class="result-container">
+		<div id="result"></div>
+		<button class="btn" id="clipboard">
+        copy</button>
+	</div>
+	<div class="settings">
+		<div class="setting">
+			<div>longeur du password</div>
+			<input type="number" id="length" min='4' max='20' value='20' />
+		</div>
+		<div class="setting">
+			<div>contient des lettres majuscules</div> 
+			<input type="checkbox" id="uppercase" checked />
+		</div>
+		<div class="setting">
+			<div>contient des lettres minuscules</div> 
+			<input type="checkbox" id="lowercase" checked />
+		</div>
+		<div class="setting">
+			<div>contient des nombres</div> 
+			<input type="checkbox" id="numbers" checked />
+		</div>
+		<div class="setting">
+			<div>contient des caracteres speciaux</div> 
+			<input type="checkbox" id="symbols" checked />
+		</div>
+	</div>
+	<button class="btn btn-large" id="generate">
+		Generer le mot de passe
+	</button>
+</div>
+    <script src="scripte.js"></script>
+</body>
+</html>
